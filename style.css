@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+#nav h2{
+    font-size: 3vw;
+    font-weight: 900;
+}
+#nav h5{
+    font-size: 1.2vw;
+}
+#nav button{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: #F09F2B;
+    color: #fff;
+    border: none;
+}
+#nav i{
+    font-weight: 600;
+    font-size: 2vw;
+    display: none;
+}
+#nav img{
+    height: 150px;
+    margin-right: 23vw;
+}
+#prt2{
+    display: flex;
+    align-items: center;
+    gap: 3.2vw;
+}
+#center{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left h1{
+    font-size: 6vw;
+    line-height: 6vw;
+    opacity: .7;
+    margin-bottom: 3vw;
+}
+#left p{
+    font-size: 1.4vw;
+    margin-bottom: 3vw;
+}
+#left button{
+    padding: 1.4vw 3vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: none;
+    background-color: #434959;
+    color: #fff;
+}
+#right{
+    height: 100%;
+    width: 50%;
+}
+#right img{
+    width: 100%;
+}
+
+
+@media (max-width:600px) {
+    #nav{
+        height: 80px;
+    }
+    #nav img{
+        height: 70px;
+    }
+    #nav h2{
+        font-size: 7vw;
+    }
+    #nav h5{
+        font-size: 4vw;
+        display: none;
+    }
+    #nav i{
+        display: block;
+        font-size: 6vw;
+    }
+    #prt2{
+        gap: 6vw;
+    }
+    #nav button{
+        padding: 3vw 4vw;
+        font-size: 3vw;
+    }
+    #center{
+        flex-direction: column;
+    }
+    #left{
+        height: 50%;
+        width: 100%;
+    }
+    #left h1{
+        font-size: 13vw;
+        line-height: 13vw;
+        margin-bottom: 4vw;
+    }
+    #left p{
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+    #left button{
+        padding: 4vw 9vw;
+        font-size: 3.7vw;
+    }
+    #right{
+        height: 50%;
+        width: 100%;
+    }
+    
+}
